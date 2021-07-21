@@ -5,9 +5,15 @@
   </head>
   <body>
     <div id="app">
-      <span :title="counter">counter: {{ counter }}</span>
-      <button @click="counter++">Click</button>
-      <span v-if="counter % 2 == 0">hi!</span>
+      <input v-model="data" />
+      <br />
+      Enter: "Hi!"
+      <br />
+      <div v-if="data === 'Hi!'" v-show="!hidePopup">
+        YAY!
+        <br />
+        <button @click="hidePopup = true">X</button>
+      </div>
     </div>
   </body>
 </html>
