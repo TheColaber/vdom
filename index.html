@@ -7,7 +7,7 @@
     <div id="app">
       <span :title="counter">counter: {{ counter }}</span>
       <button @click="counter++">Click</button>
-      <span v-show="counter % 2 == 0">hi!</span>
+      <span v-if="counter % 2 == 0">hi!</span>
     </div>
   </body>
 </html>
