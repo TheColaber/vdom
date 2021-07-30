@@ -5,15 +5,11 @@
   </head>
   <body>
     <div id="app">
-      <input v-model="data" />
-      <br />
-      Enter: "Hi!"
-      <br />
-      <div v-if="data === 'Hi!'" v-show="!hidePopup">
-        YAY!
-        <br />
-        <button @click="hidePopup = true">X</button>
-      </div>
+      <!-- <button @click="showTemplate = !showTemplate">Click me!</button> -->
+      <template v-if="true">
+        <div>YAY!!!</div>
+        hello worlds
+      </template>
     </div>
   </body>
 </html>
