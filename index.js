@@ -4,6 +4,7 @@ window.app = new VDom({
   data() {
     return {
       showTemplate: true,
+      welcome: "hello!",
     };
   },
 });

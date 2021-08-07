@@ -3,12 +3,12 @@
   <head>
     <script src="./index.js" type="module"></script>
   </head>
-  <body> 
+  <body>
     <div id="app">
       <button @click="showTemplate = !showTemplate">Click me!</button>
       <template v-if="showTemplate">
-        <div>YAY!!!</div>
-        hello worlds
+        <div v-scope="{ welcome: 'hi!' }">{{ welcome }}</div>
+        <div>{{ welcome }}</div>
       </template>
     </div>
   </body>
