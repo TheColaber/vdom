@@ -10,6 +10,7 @@
         <div v-scope="{ welcome: 'hi!', score: 1 }">
           {{ welcome }} {{ score }}
           <button @click="score++">inc</button>
+          <button @click="score--">dec</button>
         </div>
         <div>{{ welcome }}</div>
       </template>
